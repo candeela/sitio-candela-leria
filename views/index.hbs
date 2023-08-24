@@ -1,0 +1,157 @@
+<div class="container-fluid">
+    <div id="home" class="row align-items-center hero scroll_section">
+        <div class="col-lg-3 offset-lg-2">
+            <p></p>
+            <h1>Leria Accesorios</h1>
+            <p>Nuestros productos estan hechos totalmente a mano, hechos con amor y dedicacion. Podes encontrar carteras, bolsos, mochilas, riñoñeras y demas accesorios. No dudes en consultarnos. Instagram: @leriaaccesorios</p>
+        </div>
+    </div>
+
+    <div class="row my-3">
+        <div id="novedades" class="col-md-5 offset-md-2 py-3 scroll_section">
+            <h2>Novedades</h2>
+            <ul class="lista-novedades">
+                {{#each novedades}}
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal{{id}}"><img
+                            src="images/leriaa.jpg">{{titulo}} </a></li>
+                {{/each}}
+
+            </ul>
+
+        </div>
+{{#each novedades}}
+        <div class="modal fade" id="exampleModal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">{{titulo}}</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>{{subtitulo}}</h3>
+                        <p>{{cuerpo}}</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        {{/each}}
+        
+
+
+        <div id="historia" class="row align-items-center py-4 scroll_section">
+            <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+                <img src="images/leria2.jpg" alt="historia 1" class="img-fluid">
+            </div>
+
+            <div class="col-lg-2 col-md-3 d-none d-sm-block">
+                <img src="images/leria3.jpg" alt="historia 2" class="img-fluid">
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+                <h2>Historia</h2>
+                <p>Leria es un emprendimiento que empezó en la pandemia,
+                    vendiendo por internet a conocidos y fue creciendo, pasando por algunas ferias de emprendimientos
+                    hasta llegar a la feria de Plaza Francia que es en donde nos podes encontrar todos los fines de
+                    semana. </p>
+            </div>
+        </div>
+
+
+
+
+        <div id="productos" class="row align-items-stretch my-3 fondo-productos py-4 scroll_section">
+            <div class="col-lg-8 offset-lg-2">
+                <h2>Productos mas vendidos</h2>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/leria4.jpg" class="card-img-top" alt="Catalina Rodriguez">
+                            <div class="card-body">
+                                <h5 class="card-title">Mochila</h5>
+                                <p class="card-text">Las mochilas son un clasico que no te pueden faltar  </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/leria5.jpg" class="card-img-top" alt="Santiago Mendes">
+                            <div class="card-body">
+                                <h5 class="card-title">Riñonera XL</h5>
+                                <p class="card-text">Nuestra riñonera XL te permite llevar todo lo que necesitas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/leria6.jpg" class="card-img-top" alt="Mateo Feldman">
+                            <div class="card-body">
+                                <h5 class="card-title">Matera</h5>
+                                <p class="card-text">El set de matera con los chau lata son ideales para los fanaticos del mate.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img src="images/leria7.jpg" class="card-img-top" alt="Catalina Rodriguez">
+                            <div class="card-body">
+                                <h5 class="card-title">Cartucheras</h5>
+                                <p class="card-text">Cartucheras con cierre y divisiones, super lindas y practicas  </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="visitanos" class="row py-4 scroll_section">
+            <div class="col-md-4 offset-md-2">
+                <h2>Visitanos</h2>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.058517534007!2d-58.393176!3d-34.5848217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa1eb4e7ad1%3A0x8bcb7db37f6f9421!2sPlaza%20Francia!5e0!3m2!1ses-419!2sar!4v1690467692888!5m2!1ses-419!2sar"></iframe>
+
+                </div>
+            </div>
+        </div>
+        <div id="contactanos" class="col-md-4 mt-4 mt-sm-0 scroll_section">
+            <h2>Contactanos</h2>
+
+            <form class="row g-3" action="/" method="post">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputAddress" placeholder="ejemplo@email.com"
+                        name="email">
+                </div>
+                <div class="col-12">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="123456789" name="telefono">
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" name="mensaje"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            <p>{{message}}</p>
+            
+            
+
+        </div>
+
+    </div>
+</div>

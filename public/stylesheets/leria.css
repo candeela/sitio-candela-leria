@@ -1,0 +1,60 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Alfa Slab One', cursive;
+*/
+footer{
+    background-color: gray;
+}
+h1,
+h2{
+    font-family: 'Alfa Slab One', cursive;
+}
+.hero{
+    background:url(../images/leria.jpg);
+    background-size: cover;
+    height: 50vh ;
+    min-height: 600px;
+    color: white;
+}
+.lista-novedades{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.lista-novedades li{
+    margin: 4px 0;
+}
+.lista-novedades li a{
+    background-color: #fff;
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover{
+    color: #212529;
+    background-color: #dadada;
+}
+.lista-novedades li a img{
+    width: 120px;
+    height: 50px;
+    transition: all .2s ease-in-out;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+.fondo-productos{
+    background: #efefef;
+}
+.mapa iframe{
+width: 100%;
+aspect-ratio: 1,2;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll_section{
+    scroll-margin-top: 60px;
+}
